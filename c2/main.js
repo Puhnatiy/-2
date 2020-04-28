@@ -1,3 +1,4 @@
+window.onload = function () {
 const header = new Headers({
     'Access-Control-Allow-Credentials': true,
     'Access-Control-Allow-Origin': '*'
@@ -30,4 +31,5 @@ ES.onmessage = message => {
 
     progress4.style.cssText = `width: ${all}%`
     progress4.textContent = `${all}`
+}
 }
